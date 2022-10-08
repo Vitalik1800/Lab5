@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="Інформація про ім'я користувача та пароль"
+        android:title="Інформація про користувача">
+        <EditTextPreference
+            android:key="username"
+            android:summary="Будь ласка введіть ваш логін"
+            android:title="Логін:"/>
+        <EditTextPreference
+            android:key="password"
+            android:summary="Будь ласка введіть ваш пароль"
+            android:title="Пароль:"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="Інформація про ім'я користувача та пароль"
+        android:title="Налаштування">
+        <CheckBoxPreference
+            android:key="checkBox"
+            android:summary="Увімкнути/Вимкнути"
+            android:title="Залишити мене в системі"
+            />
+        <ListPreference
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"
+            android:key="list_pref"
+            android:summary="Список налаштувань"
+            android:title="Список налаштувань"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>
